@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <main class="w-full h-screen bg-gray-200 flex justify-center">
-        <div class="w-[2000px] h-[120px] bg-white rounded-3xl p-6 mt-10 flex justify-between">
+        <header class="w-full h-24 bg-white rounded-3xl p-6 mt-10 flex justify-between">
             <div>
-            <p class="font-bold text-3xl ">Dominion City Church Attendance Dashboard</p>
-            <p class="text-xl text-gray-400 font-semibold">Manage Church Attendance, Members, Ministries, and Attendance Analytics</p>
+            <p class="font-bold text-xl ">Dominion City Church Attendance Dashboard</p>
+            <p class="text-sm text-gray-400 font-semibold">Manage Church Attendance, Members, Ministries, and Attendance Analytics</p>
             </div>
             <div class="flex gap-4">
                 <input class="w-[400px] h-[60px] border border-slate-200 bg-gray-100 rounded-2xl text-xl font-semibold p-4" 
@@ -23,7 +23,8 @@
                 <p class="text-gray-400 font-semibold text-xl">admin@dominioncity.org</p>
                 </div>
             </div>
-        </div>
+        </header>
+        {%block content%}{%endblock%}
     </main>
 </body>
 </html>
