@@ -7,8 +7,8 @@ def index():
     return render_template("index.html")
 
 @app.route("/helena")
-def helena():
-    return render_template("helena.html")
+def blessing():
+    return render_template("blessing.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

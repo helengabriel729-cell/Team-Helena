@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main class="w-full h-screen bg-gray-200 flex justify-center">
+    <main class="w-full h-screen bg-gray-200 flex flex-col gap-10 p-10">
         <header class="w-full h-24 bg-white rounded-3xl p-6 mt-10 flex justify-between">
             <div>
             <p class="font-bold text-xl ">Dominion City Church Attendance Dashboard</p>
@@ -24,7 +24,9 @@
                 </div>
             </div>
         </header>
+
+        {% block content %}
+        {% endblock %}
     </main>
-    {%block content%}{%endblock%}
 </body>
 </html>
